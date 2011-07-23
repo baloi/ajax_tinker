@@ -1039,3 +1039,71 @@ Rendering inventory/index
 Rendered inventory/_list (0.00060)
 DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
 Completed in 0.00873 (114 reqs/sec) | Rendering: 0.00287 (32%) | DB: 0.00044 (5%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:28:23) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000432)[0m   [0;1mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00057)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.00829 (120 reqs/sec) | Rendering: 0.00256 (30%) | DB: 0.00043 (5%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:28:34) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"20", "product_name"=>"Swing Hacks", "controller"=>"inventory"}
+  [4;35;1mSQL (0.000326)[0m   [0mINSERT INTO products ("name", "price") VALUES('Swing Hacks', 20)[0m
+  [4;36;1mProduct Load (0.000248)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00038)
+Completed in 0.01045 (95 reqs/sec) | Rendering: 0.00070 (6%) | DB: 0.00057 (5%) | 200 OK [http://localhost/inventory/add_product]
+  [4;36;1mProduct Delete all (0.003489)[0m   [0;1mDELETE FROM products WHERE 1=1[0m
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:29:06) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000382)[0m   [0mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00007)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.00792 (126 reqs/sec) | Rendering: 0.00215 (27%) | DB: 0.00038 (4%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:29:52) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"40", "product_name"=>"The Ruby Way", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000152)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'The Ruby Way') LIMIT 1[0m
+  [4;35;1mSQL (0.000265)[0m   [0mINSERT INTO products ("name", "price") VALUES('The Ruby Way', 40)[0m
+  [4;36;1mProduct Load (0.000499)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00033)
+Completed in 0.05690 (17 reqs/sec) | Rendering: 0.00097 (1%) | DB: 0.00092 (1%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:29:54) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"40", "product_name"=>"The Ruby Way", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000202)[0m   [0mSELECT * FROM products WHERE (products.name = 'The Ruby Way') LIMIT 1[0m
+  [4;36;1mProduct Load (0.000137)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00015)
+Completed in 0.00776 (128 reqs/sec) | Rendering: 0.00047 (5%) | DB: 0.00034 (4%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:30:07) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"40", "product_name"=>"The Ruby Way", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000166)[0m   [0mSELECT * FROM products WHERE (products.name = 'The Ruby Way') LIMIT 1[0m
+  [4;36;1mProduct Load (0.000136)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00015)
+Completed in 0.00760 (131 reqs/sec) | Rendering: 0.00046 (6%) | DB: 0.00030 (3%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:30:21) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"34", "product_name"=>"Rails Recipes", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000134)[0m   [0mSELECT * FROM products WHERE (products.name = 'Rails Recipes') LIMIT 1[0m
+  [4;36;1mSQL (0.000369)[0m   [0;1mINSERT INTO products ("name", "price") VALUES('Rails Recipes', 34)[0m
+  [4;35;1mProduct Load (0.000199)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00016)
+Completed in 0.01018 (98 reqs/sec) | Rendering: 0.00047 (4%) | DB: 0.00070 (6%) | 200 OK [http://localhost/inventory/add_product]

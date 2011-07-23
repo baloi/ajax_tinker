@@ -1,2 +1,3 @@
 *.swp
 tmp/
+db/development.sqlite3
