@@ -1144,3 +1144,996 @@ Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:33:47
   [4;36;1mProduct Load (0.000179)[0m   [0;1mSELECT * FROM products [0m
 Rendered inventory/_list (0.00016)
 Completed in 0.00809 (123 reqs/sec) | Rendering: 0.00047 (5%) | DB: 0.00036 (4%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:34:28) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000408)[0m   [0mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00056)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.00874 (114 reqs/sec) | Rendering: 0.00288 (32%) | DB: 0.00041 (4%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:49:20) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"30", "product_name"=>"Pro Active Record", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.001908)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'Pro Active Record') LIMIT 1[0m
+  [4;35;1mSQL (0.000473)[0m   [0mINSERT INTO products ("name", "price") VALUES('Pro Active Record', 30)[0m
+  [4;36;1mProduct Load (0.000460)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00050)
+Completed in 0.17000 (5 reqs/sec) | Rendering: 0.00186 (1%) | DB: 0.00284 (1%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:49:21) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"30", "product_name"=>"Pro Active Record", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.009748)[0m   [0mSELECT * FROM products WHERE (products.name = 'Pro Active Record') LIMIT 1[0m
+  [4;36;1mProduct Load (0.000237)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00018)
+Completed in 0.01803 (55 reqs/sec) | Rendering: 0.00058 (3%) | DB: 0.00998 (55%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:49:25) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"30", "product_name"=>"Pro Active Record", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000224)[0m   [0mSELECT * FROM products WHERE (products.name = 'Pro Active Record') LIMIT 1[0m
+  [4;36;1mProduct Load (0.000193)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00017)
+Completed in 0.00795 (125 reqs/sec) | Rendering: 0.00049 (6%) | DB: 0.00042 (5%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:49:34) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"30", "product_name"=>"The Passionate Programmer", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000137)[0m   [0mSELECT * FROM products WHERE (products.name = 'The Passionate Programmer') LIMIT 1[0m
+  [4;36;1mSQL (0.000306)[0m   [0;1mINSERT INTO products ("name", "price") VALUES('The Passionate Programmer', 30)[0m
+  [4;35;1mProduct Load (0.000470)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00024)
+Completed in 0.05316 (18 reqs/sec) | Rendering: 0.00077 (1%) | DB: 0.00091 (1%) | 200 OK [http://localhost/inventory/add_product]
+  [4;35;1mProduct Delete all (0.002932)[0m   [0mDELETE FROM products WHERE 1=1[0m
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:50:43) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"30", "product_name"=>"The Passionate Programmer", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000134)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'The Passionate Programmer') LIMIT 1[0m
+  [4;35;1mSQL (0.000286)[0m   [0mINSERT INTO products ("name", "price") VALUES('The Passionate Programmer', 30)[0m
+  [4;36;1mProduct Load (0.000244)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00015)
+Completed in 0.01032 (96 reqs/sec) | Rendering: 0.00047 (4%) | DB: 0.00066 (6%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:56:27) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000375)[0m   [0mSELECT * FROM products [0m
+Rendering inventory/index
+ERROR: compiling _run_rhtml_47app47views47inventory47_list46rhtml RAISED compile error
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected '=', expecting tASSOC
+                :url => {:action => :delete_product, :id = product.id}
+                                                          ^
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected '}', expecting ')'
+Function body: def _run_rhtml_47app47views47inventory47_list46rhtml(local_assigns)
+list = local_assigns[:list]
+list_counter = local_assigns[:list_counter]
+_erbout = ''; _erbout.concat "<table border=\"1\">\n"
+;  @products.each do |product| ; _erbout.concat "\n    <tr>\n        <td> "
+
+; _erbout.concat(( product.name ).to_s); _erbout.concat "</td> \n        <td>"
+; _erbout.concat(( product.price ).to_s); _erbout.concat "</td>\n        <td>\n          "
+
+; _erbout.concat(( link_to_remote(
+                :update => "product_list",
+                :url => {:action => :delete_product, :id = product.id}
+              ) 
+          ).to_s); _erbout.concat "\n        </td>\n    </tr>\n"
+
+
+;  end ; _erbout.concat "\n\n</table>\n\n\n"
+
+
+
+
+; _erbout
+end
+Backtrace: /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:20:in `compile_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:275:in `render'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:59:in `render_partial'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:58:in `render_partial'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:287:in `render'
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:6:in `_run_rhtml_47app47views47inventory47index46rhtml'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected '=', expecting tASSOC
+                :url => {:action => :delete_product, :id = product.id}
+                                                          ^
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected '}', expecting ')') on line #9 of app/views/inventory/_list.rhtml:
+6:         <td>
+7:           <%= link_to_remote(
+8:                 :update => "product_list",
+9:                 :url => {:action => :delete_product, :id = product.id}
+10:               ) 
+11:           %>
+12:         </td>
+
+    /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:20:in `compile_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:275:in `render'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:59:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:58:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:287:in `render'
+    /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:6:in `_run_rhtml_47app47views47inventory47index46rhtml'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+
+
+Rendering /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:56:39) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000378)[0m   [0;1mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00127)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.08835 (11 reqs/sec) | Rendering: 0.08237 (93%) | DB: 0.00038 (0%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:57:03) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000379)[0m   [0mSELECT * FROM products [0m
+Rendering inventory/index
+ERROR: compiling _run_rhtml_47app47views47inventory47_list46rhtml RAISED compile error
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected tSYMBEG, expecting ')'
+                :update => "product_list",
+                 ^
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected ',', expecting ')'
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:12: syntax error, unexpected ')', expecting kEND
+          ).to_s); _erbout.concat "\n        </td>\n    </tr>\n"
+                 ^
+Function body: def _run_rhtml_47app47views47inventory47_list46rhtml(local_assigns)
+list = local_assigns[:list]
+list_counter = local_assigns[:list_counter]
+_erbout = ''; _erbout.concat "<table border=\"1\">\n"
+;  @products.each do |product| ; _erbout.concat "\n    <tr>\n        <td> "
+
+; _erbout.concat(( product.name ).to_s); _erbout.concat "</td> \n        <td>"
+; _erbout.concat(( product.price ).to_s); _erbout.concat "</td>\n        <td>\n          "
+
+; _erbout.concat(( link_to_remote(
+                'delete'
+                :update => "product_list",
+                :url => {:action => :delete_product, :id => product.id}
+              ) 
+          ).to_s); _erbout.concat "\n        </td>\n    </tr>\n"
+
+
+;  end ; _erbout.concat "\n\n</table>\n\n\n"
+
+
+
+
+; _erbout
+end
+Backtrace: /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:21:in `compile_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:275:in `render'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:59:in `render_partial'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:58:in `render_partial'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:287:in `render'
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:6:in `_run_rhtml_47app47views47inventory47index46rhtml'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected tSYMBEG, expecting ')'
+                :update => "product_list",
+                 ^
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected ',', expecting ')'
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:12: syntax error, unexpected ')', expecting kEND
+          ).to_s); _erbout.concat "\n        </td>\n    </tr>\n"
+                 ^) on line #9 of app/views/inventory/_list.rhtml:
+6:         <td>
+7:           <%= link_to_remote(
+8:                 'delete'
+9:                 :update => "product_list",
+10:                 :url => {:action => :delete_product, :id => product.id}
+11:               ) 
+12:           %>
+
+    /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:21:in `compile_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:275:in `render'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:59:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:58:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:287:in `render'
+    /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:6:in `_run_rhtml_47app47views47inventory47index46rhtml'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+
+
+Rendering /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:57:06) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000381)[0m   [0;1mSELECT * FROM products [0m
+Rendering inventory/index
+ERROR: compiling _run_rhtml_47app47views47inventory47_list46rhtml RAISED compile error
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected tSYMBEG, expecting ')'
+                :update => "product_list",
+                 ^
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected ',', expecting ')'
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:12: syntax error, unexpected ')', expecting kEND
+          ).to_s); _erbout.concat "\n        </td>\n    </tr>\n"
+                 ^
+Function body: def _run_rhtml_47app47views47inventory47_list46rhtml(local_assigns)
+list = local_assigns[:list]
+list_counter = local_assigns[:list_counter]
+_erbout = ''; _erbout.concat "<table border=\"1\">\n"
+;  @products.each do |product| ; _erbout.concat "\n    <tr>\n        <td> "
+
+; _erbout.concat(( product.name ).to_s); _erbout.concat "</td> \n        <td>"
+; _erbout.concat(( product.price ).to_s); _erbout.concat "</td>\n        <td>\n          "
+
+; _erbout.concat(( link_to_remote(
+                'delete'
+                :update => "product_list",
+                :url => {:action => :delete_product, :id => product.id}
+              ) 
+          ).to_s); _erbout.concat "\n        </td>\n    </tr>\n"
+
+
+;  end ; _erbout.concat "\n\n</table>\n\n\n"
+
+
+
+
+; _erbout
+end
+Backtrace: /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:21:in `compile_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:275:in `render'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:59:in `render_partial'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:58:in `render_partial'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:287:in `render'
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:6:in `_run_rhtml_47app47views47inventory47index46rhtml'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected tSYMBEG, expecting ')'
+                :update => "product_list",
+                 ^
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:9: syntax error, unexpected ',', expecting ')'
+/Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:12: syntax error, unexpected ')', expecting kEND
+          ).to_s); _erbout.concat "\n        </td>\n    </tr>\n"
+                 ^) on line #9 of app/views/inventory/_list.rhtml:
+6:         <td>
+7:           <%= link_to_remote(
+8:                 'delete'
+9:                 :update => "product_list",
+10:                 :url => {:action => :delete_product, :id => product.id}
+11:               ) 
+12:           %>
+
+    /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:21:in `compile_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:318:in `compile_and_render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:275:in `render'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:59:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:58:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:287:in `render'
+    /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:6:in `_run_rhtml_47app47views47inventory47index46rhtml'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:812:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+
+
+Rendering /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:57:11) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000381)[0m   [0mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00504)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.01266 (78 reqs/sec) | Rendering: 0.00658 (51%) | DB: 0.00038 (3%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:57:14) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+
+
+ActionController::UnknownAction (No action responded to delete_product):
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+
+
+Rendering /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:57:52) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000382)[0m   [0;1mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00149)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.00872 (114 reqs/sec) | Rendering: 0.00289 (33%) | DB: 0.00038 (4%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:57:55) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #2 of app/views/inventory/_list.rhtml:
+1: <table border="1">
+2: <% @products.each do |product| %>
+3:     <tr>
+4:         <td> <%= product.name %></td> 
+5:         <td><%= product.price %></td>
+
+    /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/_list.rhtml:2:in `_run_rhtml_47app47views47inventory47_list46rhtml'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:325:in `compile_and_render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:301:in `render_template'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:260:in `render_file'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/base.rb:275:in `render'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:59:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_view/partials.rb:58:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:856:in `render_partial'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:768:in `render_with_no_layout'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /Users/baloi/rb_1.8/ajax_tinker/app/controllers/inventory_controller.rb:18:in `delete_product'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+
+
+Rendering /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:58:20) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000383)[0m   [0mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00156)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.00924 (108 reqs/sec) | Rendering: 0.00310 (33%) | DB: 0.00038 (4%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:24) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000378)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00161)
+Completed in 0.00778 (128 reqs/sec) | Rendering: 0.00195 (25%) | DB: 0.00038 (4%) | 200 OK [http://localhost/inventory/delete_product/1]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:25) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000387)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00156)
+Completed in 0.00771 (129 reqs/sec) | Rendering: 0.00189 (24%) | DB: 0.00039 (5%) | 200 OK [http://localhost/inventory/delete_product/1]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:25) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000371)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00155)
+Completed in 0.00774 (129 reqs/sec) | Rendering: 0.00197 (25%) | DB: 0.00037 (4%) | 200 OK [http://localhost/inventory/delete_product/1]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:25) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000371)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00164)
+Completed in 0.00783 (127 reqs/sec) | Rendering: 0.00197 (25%) | DB: 0.00037 (4%) | 200 OK [http://localhost/inventory/delete_product/1]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:25) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000373)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.06494)
+Completed in 0.07214 (13 reqs/sec) | Rendering: 0.06597 (91%) | DB: 0.00037 (0%) | 200 OK [http://localhost/inventory/delete_product/1]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:25) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000381)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00159)
+Completed in 0.00801 (124 reqs/sec) | Rendering: 0.00196 (24%) | DB: 0.00038 (4%) | 200 OK [http://localhost/inventory/delete_product/1]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:58:33) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"20", "product_name"=>"Test Patterns", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000135)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'Test Patterns') LIMIT 1[0m
+  [4;35;1mSQL (0.000289)[0m   [0mINSERT INTO products ("name", "price") VALUES('Test Patterns', 20)[0m
+  [4;36;1mProduct Load (0.000525)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00208)
+Completed in 0.07453 (13 reqs/sec) | Rendering: 0.00270 (3%) | DB: 0.00095 (1%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:35) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"2", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000398)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00175)
+Completed in 0.00812 (123 reqs/sec) | Rendering: 0.00208 (25%) | DB: 0.00040 (4%) | 200 OK [http://localhost/inventory/delete_product/2]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:35) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"2", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000405)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00176)
+Completed in 0.00805 (124 reqs/sec) | Rendering: 0.00209 (26%) | DB: 0.00041 (5%) | 200 OK [http://localhost/inventory/delete_product/2]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:58:35) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"2", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000395)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00178)
+Completed in 0.00805 (124 reqs/sec) | Rendering: 0.00211 (26%) | DB: 0.00040 (4%) | 200 OK [http://localhost/inventory/delete_product/2]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:59:11) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"2", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000166)[0m   [0;1mSELECT * FROM products WHERE (products."id" = 2) [0m
+
+
+NoMethodError (undefined method `delete' for #<Product:0x2200934>):
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activerecord-1.15.6/lib/active_record/base.rb:1863:in `method_missing'
+    /Users/baloi/rb_1.8/ajax_tinker/app/controllers/inventory_controller.rb:19:in `delete_product'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/rails-1.2.6/lib/commands/server.rb:39
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    /Users/baloi/.rvm/rubies/ruby-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+
+
+Rendering /Users/baloi/.rvm/gems/ruby-1.8.7-head@dev_barn/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing InventoryController#index (for 127.0.0.1 at 2011-07-23 11:59:22) [GET]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"index", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000400)[0m   [0mSELECT * FROM products [0m
+Rendering inventory/index
+Rendered inventory/_list (0.00168)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47inventory47index46rhtml at /Users/baloi/rb_1.8/ajax_tinker/app/views/inventory/index.rhtml:18)
+Completed in 0.00904 (110 reqs/sec) | Rendering: 0.00315 (34%) | DB: 0.00040 (4%) | 200 OK [http://localhost/inventory]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:59:24) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"2", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000164)[0m   [0;1mSELECT * FROM products WHERE (products."id" = 2) [0m
+  [4;35;1mProduct Destroy (0.000331)[0m   [0m DELETE FROM products
+ WHERE "id" = 2
+[0m
+  [4;36;1mProduct Load (0.000353)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00132)
+Completed in 0.01188 (84 reqs/sec) | Rendering: 0.00168 (14%) | DB: 0.00085 (7%) | 200 OK [http://localhost/inventory/delete_product/2]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 11:59:45) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"1", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000163)[0m   [0mSELECT * FROM products WHERE (products."id" = 1) [0m
+  [4;36;1mProduct Destroy (0.000298)[0m   [0;1m DELETE FROM products
+ WHERE "id" = 1
+[0m
+  [4;35;1mProduct Load (0.000309)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00015)
+Completed in 0.01048 (95 reqs/sec) | Rendering: 0.00051 (4%) | DB: 0.00077 (7%) | 200 OK [http://localhost/inventory/delete_product/1]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:59:55) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"30", "product_name"=>"Pro Active Record", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000132)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'Pro Active Record') LIMIT 1[0m
+  [4;35;1mSQL (0.000265)[0m   [0mINSERT INTO products ("name", "price") VALUES('Pro Active Record', 30)[0m
+  [4;36;1mProduct Load (0.000218)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00107)
+Completed in 0.01138 (87 reqs/sec) | Rendering: 0.00143 (12%) | DB: 0.00062 (5%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 12:00:06) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"10", "product_name"=>"The Ruby Way", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000135)[0m   [0mSELECT * FROM products WHERE (products.name = 'The Ruby Way') LIMIT 1[0m
+  [4;36;1mSQL (0.000361)[0m   [0;1mINSERT INTO products ("name", "price") VALUES('The Ruby Way', 10)[0m
+  [4;35;1mProduct Load (0.000243)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00127)
+Completed in 0.01202 (83 reqs/sec) | Rendering: 0.00163 (13%) | DB: 0.00074 (6%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 12:00:13) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"10", "product_name"=>"The Passionate Programmer", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000138)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'The Passionate Programmer') LIMIT 1[0m
+  [4;35;1mSQL (0.000269)[0m   [0mINSERT INTO products ("name", "price") VALUES('The Passionate Programmer', 10)[0m
+  [4;36;1mProduct Load (0.000240)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00153)
+Completed in 0.01214 (82 reqs/sec) | Rendering: 0.00188 (15%) | DB: 0.00065 (5%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 12:00:26) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"10", "product_name"=>"Rails Recipes", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000138)[0m   [0mSELECT * FROM products WHERE (products.name = 'Rails Recipes') LIMIT 1[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mINSERT INTO products ("name", "price") VALUES('Rails Recipes', 10)[0m
+  [4;35;1mProduct Load (0.000260)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00166)
+Completed in 0.01232 (81 reqs/sec) | Rendering: 0.00201 (16%) | DB: 0.00069 (5%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 12:00:39) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"10", "product_name"=>"Swing Hacks", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000137)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'Swing Hacks') LIMIT 1[0m
+  [4;35;1mSQL (0.000263)[0m   [0mINSERT INTO products ("name", "price") VALUES('Swing Hacks', 10)[0m
+  [4;36;1mProduct Load (0.000271)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00180)
+Completed in 0.01239 (80 reqs/sec) | Rendering: 0.00214 (17%) | DB: 0.00067 (5%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 12:00:42) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"4", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000165)[0m   [0mSELECT * FROM products WHERE (products."id" = 4) [0m
+  [4;36;1mProduct Destroy (0.000294)[0m   [0;1m DELETE FROM products
+ WHERE "id" = 4
+[0m
+  [4;35;1mProduct Load (0.000709)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00189)
+Completed in 0.01325 (75 reqs/sec) | Rendering: 0.00224 (16%) | DB: 0.00117 (8%) | 200 OK [http://localhost/inventory/delete_product/4]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 12:00:44) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"2", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000222)[0m   [0;1mSELECT * FROM products WHERE (products."id" = 2) [0m
+  [4;35;1mProduct Destroy (0.000305)[0m   [0m DELETE FROM products
+ WHERE "id" = 2
+[0m
+  [4;36;1mProduct Load (0.000254)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00172)
+Completed in 0.01220 (81 reqs/sec) | Rendering: 0.00219 (17%) | DB: 0.00078 (6%) | 200 OK [http://localhost/inventory/delete_product/2]
+
+
+Processing InventoryController#delete_product (for 127.0.0.1 at 2011-07-23 12:00:47) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"action"=>"delete_product", "id"=>"3", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000170)[0m   [0mSELECT * FROM products WHERE (products."id" = 3) [0m
+  [4;36;1mProduct Destroy (0.000309)[0m   [0;1m DELETE FROM products
+ WHERE "id" = 3
+[0m
+  [4;35;1mProduct Load (0.000290)[0m   [0mSELECT * FROM products [0m
+Rendered inventory/_list (0.00151)
+Completed in 0.01184 (84 reqs/sec) | Rendering: 0.00203 (17%) | DB: 0.00077 (6%) | 200 OK [http://localhost/inventory/delete_product/3]

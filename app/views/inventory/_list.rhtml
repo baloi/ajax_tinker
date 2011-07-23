@@ -3,6 +3,14 @@
     <tr>
         <td> <%= product.name %></td> 
         <td><%= product.price %></td>
+        <td>
+          <%= link_to_remote(
+                'delete',
+                :update => "product_list",
+                :url => {:action => :delete_product, :id => product.id}
+              ) 
+          %>
+        </td>
     </tr>
 <% end %>
 

@@ -12,4 +12,12 @@ class InventoryController < ApplicationController
     @products = Product.find(:all) 
     render(:partial => 'list', :layout => false)
   end
+
+  def delete_product
+    id = params[:id]
+    product = Product.find(id)
+    product.destroy
+    @products = Product.find(:all)
+    render(:partial => 'list')
+  end
 end
