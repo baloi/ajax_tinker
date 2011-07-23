@@ -1107,3 +1107,40 @@ Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:30:21
   [4;35;1mProduct Load (0.000199)[0m   [0mSELECT * FROM products [0m
 Rendered inventory/_list (0.00016)
 Completed in 0.01018 (98 reqs/sec) | Rendering: 0.00047 (4%) | DB: 0.00070 (6%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:32:41) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"34", "product_name"=>"Rails Recipes 2", "controller"=>"inventory"}
+  [4;36;1mProduct Load (0.000144)[0m   [0;1mSELECT * FROM products WHERE (products.name = 'Rails Recipes 2') LIMIT 1[0m
+  [4;35;1mSQL (0.000271)[0m   [0mINSERT INTO products ("name", "price") VALUES('Rails Recipes 2', 34)[0m
+  [4;36;1mProduct Load (0.000210)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00017)
+Completed in 0.01056 (94 reqs/sec) | Rendering: 0.00050 (4%) | DB: 0.00062 (5%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:33:46) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"34", "product_name"=>"Rails Recipes 2", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000202)[0m   [0mSELECT * FROM products WHERE (products.name = 'Rails Recipes 2') LIMIT 1[0m
+  [4;36;1mProduct Load (0.000174)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00016)
+Completed in 0.00782 (127 reqs/sec) | Rendering: 0.00047 (5%) | DB: 0.00038 (4%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:33:46) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"34", "product_name"=>"Rails Recipes 2", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000179)[0m   [0mSELECT * FROM products WHERE (products.name = 'Rails Recipes 2') LIMIT 1[0m
+  [4;36;1mProduct Load (0.000173)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00016)
+Completed in 0.00770 (129 reqs/sec) | Rendering: 0.00047 (6%) | DB: 0.00035 (4%) | 200 OK [http://localhost/inventory/add_product]
+
+
+Processing InventoryController#add_product (for 127.0.0.1 at 2011-07-23 11:33:47) [POST]
+  Session ID: 7ade5be73ddbac5cb75e33b08e52ea41
+  Parameters: {"commit"=>"Add Product", "action"=>"add_product", "product_price"=>"34", "product_name"=>"Rails Recipes 2", "controller"=>"inventory"}
+  [4;35;1mProduct Load (0.000182)[0m   [0mSELECT * FROM products WHERE (products.name = 'Rails Recipes 2') LIMIT 1[0m
+  [4;36;1mProduct Load (0.000179)[0m   [0;1mSELECT * FROM products [0m
+Rendered inventory/_list (0.00016)
+Completed in 0.00809 (123 reqs/sec) | Rendering: 0.00047 (5%) | DB: 0.00036 (4%) | 200 OK [http://localhost/inventory/add_product]
